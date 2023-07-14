@@ -1,0 +1,468 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#navbar {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+#Elite-logo img {
+  height: 98px;
+}
+
+#Elite-logo img:hover {
+  cursor: pointer;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  width: 34%;
+  font-size: 18px;
+  margin-top: 25px;
+  /* border: 1px solid red; */
+}
+
+#menu div:hover {
+  cursor: pointer;
+  color: #00a7ac;
+}
+
+#login-container {
+  width: 25%;
+  display: flex;
+  height: 50px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+#login-btn {
+  height: 50px;
+  width: 160px;
+  background-color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid rgb(224, 223, 223);
+  /* animation */
+  background-image: linear-gradient(to right, #00a7ac 50%, white 50%);
+  background-position: 100%;
+  background-size: 200% 100%;
+  transition: background-position 0.3s ease;
+}
+
+#login-btn:hover {
+  background-color: #00a7ac;
+  color: white;
+  cursor: pointer;
+  background-position: 0%;
+}
+
+#postjob-btn {
+  background-color: #00a7ac;
+  color: white;
+  height: 50px;
+  width: 160px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+
+  /* animaion */
+  background-image: linear-gradient(to right, #000 50%, #10c7c7 50%);
+  background-position: 100%;
+  background-size: 200% 100%;
+  transition: background-position 0.3s ease;
+}
+
+#postjob-btn:hover {
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  background-position: 0%;
+}
+
+/* Dropdown menu */
+.dropbtn {
+  background-color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 25px;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #10c7c7;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+
+.dropdown:hover .dropbtn {
+  color: #10c7c7;
+  cursor: pointer;
+}
+
+/* Banner-section */
+
+#banner {
+  animation: fade-in 1s ease-in-out;
+  display: flex;
+  padding: 50px;
+  justify-content: space-around;
+  background-image: radial-gradient(
+    circle,
+    #cdf6f6,
+    #d9f6fe,
+    #e7f5ff,
+    #f3f6fc,
+    #f8f8f8
+  );
+}
+
+#banner-content {
+  width: 50%;
+  padding-left: 100px;
+}
+
+#banner-content h1 {
+  font-size: 70px;
+}
+
+#banner-content p {
+  margin-top: -30px;
+  font-size: 23px;
+  color: grey;
+}
+
+#input-div {
+  height: 60px;
+  margin-top: 50px;
+  padding: 12px;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+#input-div input {
+  height: 50px;
+  width: 75%;
+  padding-left: 15px;
+  font-size: 16px;
+  margin-right: 6.5px;
+  border: none;
+  color: black;
+  background-color: rgb(242, 245, 245);
+}
+
+#input-div button {
+  height: 55px;
+  width: 20%;
+  color: rgb(255, 255, 255);
+  background-color: #00a7ac;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  background-image: linear-gradient(to right, #000 50%, #10c7c7 50%);
+  background-position: 100%;
+  background-size: 200% 100%;
+  transition: background-position 0.3s ease;
+}
+
+#input-div button:hover {
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  background-position: 0%;
+}
+
+#banner-img img {
+  width: 100%;
+}
+
+/* How it work section */
+#How-it-works {
+  padding: 90px;
+}
+
+#How-it-works > p,
+#How-it-works > h1 {
+  text-align: center;
+}
+
+#How-it-works span {
+  color: #10c7c7;
+}
+
+.how-container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  gap: 50px;
+}
+
+#account-created,
+#apply-job,
+#find-job,
+#resume-create {
+  display: flex;
+}
+
+#work-logo {
+  border: 1px solid rgb(227, 227, 227);
+  height: 40px;
+  border-radius: 50%;
+  width: 40px;
+  padding: 10px;
+  margin: 8px;
+}
+
+#work-logo:hover {
+  background-color: #10c7c7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#work-logo i {
+  margin-top: 15px;
+  margin-left: 3px;
+}
+
+.how-heading {
+  font-weight: bold;
+  font-size: 20px;
+  word-spacing: 3px;
+}
+
+/* Footer section */
+#footer-section {
+  padding: 50px 100px 0px 100px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+#footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+#about p:nth-child(1),
+#employer p:nth-child(1),
+#candidate p:nth-child(1),
+#download-app p:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#download-app div {
+  border: 1px solid rgb(45, 44, 44);
+  margin-bottom: 25px;
+  padding: 12px;
+}
+
+hr {
+  border: 1px solid rgb(63, 61, 61);
+}
+
+p:not(:first-child) {
+  font-size: 18px;
+  color: rgb(156, 155, 155);
+}
+
+p:not(:first-child):hover {
+  color: #10c7c7;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#footer-middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-middle div:nth-child(2) {
+  display: flex;
+  padding-top: 40px;
+  width: 30%;
+  justify-content: space-between;
+}
+
+#footer-middle p {
+  font-size: 18px;
+  color: rgb(156, 155, 155);
+}
+
+#footer-middle p:hover {
+  cursor: pointer;
+  color: #10c7c7;
+  text-decoration: none;
+}
+
+#footer-middle img {
+  height: 120px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Media queries for medium screens */
+@media screen and (max-width: 1024px) {
+  #navbar {
+    padding-left: 30px;
+    padding-right: 50px;
+  }
+  #menu {
+    display: none;
+  }
+  #banner {
+    padding: 30px;
+  }
+  #banner-content {
+    width: 70%;
+  }
+  #login-container {
+    width: 40%;
+
+    justify-content: space-between;
+  }
+  .how-container {
+    flex-wrap: wrap;
+  }
+  #login-btn {
+    width: 120px;
+    font-size: 14px;
+  }
+  #postjob-btn {
+    width: 120px;
+    font-size: 14px;
+  }
+  #input-div {
+    width: 150%;
+  }
+
+  #input-div input {
+    width: 70%;
+  }
+}
+
+/* Media queries for small screens */
+@media screen and (max-width: 768px) {
+  #navbar {
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+  #menu {
+    display: none;
+  }
+  #login-container {
+    width: 40%;
+    justify-content: space-between;
+  }
+  #login-btn {
+    width: 80px;
+    font-size: 14px;
+  }
+  #postjob-btn {
+    width: 90px;
+    font-size: 14px;
+  }
+  .dropdown-content {
+    min-width: 120px;
+  }
+  #banner {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+  #banner-content {
+    width: 90%;
+    padding-left: 0;
+    text-align: center;
+  }
+  #banner-content h1 {
+    font-size: 50px;
+  }
+  #banner-content p {
+    font-size: 18px;
+  }
+
+  #banner-img img {
+    margin-top: 50px;
+  }
+  #input-div {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #input-div input {
+    width: 90%;
+    margin-right: 0;
+  }
+  #input-div button {
+    width: 50%;
+    margin-top: 25px;
+  }
+  #How-it-works {
+    padding: 50px;
+  }
+  .how-container {
+    flex-direction: column;
+  }
+  #footer-section {
+    padding: 30px;
+  }
+  #footer-top {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  #footer-middle div:nth-child(2) {
+    flex-wrap: wrap;
+  }
+  #footer-middle img {
+    height: 80px;
+  }
+}
